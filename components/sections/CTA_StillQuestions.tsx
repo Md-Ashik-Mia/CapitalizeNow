@@ -2,7 +2,9 @@ export default function CTA_StillQuestions() {
   return (
     <section className="max-w-5xl mx-auto mt-24
       p-10 bg-[rgba(20,0,10,0.4)] rounded-2xl backdrop-blur-xl
-      border border-[rgba(255,255,255,0.08)] text-center">
+      border border-[rgba(255,255,255,0.25)]
+      shadow-[0_0_30px_rgba(255,255,255,0.08),0_0_50px_rgba(255,255,255,0.04)]
+      text-center">
 
       <h3 className="text-white text-2xl font-semibold">Still have questions?</h3>
       <p className="text-gray-400 text-sm mt-2">

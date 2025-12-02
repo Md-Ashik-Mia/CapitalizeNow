@@ -7,19 +7,19 @@ export default function UnlockButton({ onClick }: UnlockButtonProps) {
     <button
       type="button"
       onClick={onClick}
-      className="px-10 py-3 rounded-full flex items-center gap-3
+      className="px-6 py-2 rounded-full flex items-center gap-2
       text-white font-semibold text-sm cursor-pointer
-      bg-gradient-to-b from-[rgba(95,0,35,0.98)] via-[rgba(70,0,25,0.98)] to-[rgba(40,0,18,0.98)]
+      bg-black/80
       border border-[var(--pink-primary)]
-      shadow-[0_0_28px_rgba(255,71,101,0.9)]
-      transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-[var(--pink-primary)] focus:ring-offset-0"
+      shadow-[0_0_15px_rgba(255,71,101,0.5)]
+      transition hover:bg-[var(--pink-primary)]/20 focus:outline-none"
     >
       {/* white eye badge */}
       <span
-        className="flex items-center justify-center w-7 h-7 rounded-full
-        bg-white text-[var(--pink-primary)] text-xs"
+        className="flex items-center justify-center w-5 h-5 rounded-full
+        bg-white text-[var(--pink-primary)] text-[10px]"
       >
-        👁
+        <span className="translate-y-[1px]">👁</span>
       </span>
       <span>Unlock Now</span>
     </button>

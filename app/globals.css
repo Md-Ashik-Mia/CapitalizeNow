@@ -1,15 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --pink-primary: #FF4765;
-  --pink-border: #FF476529;
+  --pink-primary: #ff4765;
+  --pink-border: #ff476529;
 
   --card-bg: rgba(45, 15, 25, 0.55);
   --card-bg-2: rgba(75, 10, 20, 0.35);
 
   --inner-glow: rgba(255, 255, 255, 0.12);
-}
 
+  --pink: #ff4765;
+  --green: #12d18e;
+  --red: #f54336;
+  --purple: #4f52ff;
+  --yellow: #ffe600;
+}
 
 /* --- Trend ticker --- */
 .ticker {
@@ -35,7 +40,6 @@
     transform: translateX(-50%);
   }
 }
-
 
 @theme inline {
   --color-background: var(--background);

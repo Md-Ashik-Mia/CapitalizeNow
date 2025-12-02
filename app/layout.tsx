@@ -35,10 +35,10 @@
 
 
 
-import "./globals.css";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Squares from "@/components/Squares";
+import "./globals.css";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -51,8 +51,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             speed={0.5}
             squareSize={40}
             direction="diagonal"
-            borderColor="#222"
-            hoverFillColor="#111"
+            borderColor="#2a2a2a"
+            hoverFillColor="#1a1a1a"
           />
         </div>
 

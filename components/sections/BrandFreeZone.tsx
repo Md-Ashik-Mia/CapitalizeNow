@@ -3,7 +3,8 @@ export default function BrandFreeZone() {
   return (
     <section className="max-w-5xl mx-auto mt-16
       p-7 md:p-8 rounded-2xl bg-[rgba(13,11,20,0.96)]
-      border border-[rgba(255,255,255,0.08)]">
+      border border-[rgba(255,255,255,0.25)]
+      shadow-[0_0_30px_rgba(255,255,255,0.08),0_0_50px_rgba(255,255,255,0.04)]">
 
       <div className="flex items-start gap-3">
         {/* circular ! icon – matches Figma feel */}
