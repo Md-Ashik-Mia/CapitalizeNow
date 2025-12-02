@@ -1,9 +1,41 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --pink-primary: #FF4765;
+  --pink-border: #FF476529;
+
+  --card-bg: rgba(45, 15, 25, 0.55);
+  --card-bg-2: rgba(75, 10, 20, 0.35);
+
+  --inner-glow: rgba(255, 255, 255, 0.12);
 }
+
+
+/* --- Trend ticker --- */
+.ticker {
+  position: relative;
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 35s linear infinite;
+}
+
+/* pause when hovering */
+.ticker:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 
 @theme inline {
   --color-background: var(--background);
