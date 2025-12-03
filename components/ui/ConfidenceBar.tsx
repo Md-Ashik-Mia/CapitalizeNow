@@ -1,4 +1,4 @@
-export default function ConfidenceBar({ value }) {
+export default function ConfidenceBar({ value }:any) {
   return (
     <div className="w-full bg-[rgba(255,255,255,0.12)] h-2 rounded-full">
       <div

@@ -1,7 +1,6 @@
 "use client";
 
-import { TrendTag } from "@/data/fakeTrends";
-import { categories } from "@/data/fakeTrends";
+import { categories, TrendTag } from "@/data/fakeTrends";
 
 type Props = {
   activeTab: TrendTag;
@@ -10,7 +9,7 @@ type Props = {
   onCategoryChange: (cat: string) => void;
 };
 
-const tabs: TrendTag[] = ["Hot Now", "Fresh", "Top Rated"];
+const tabs: TrendTag[] = ["hot", "fresh", "top_rated"];
 
 export default function CategoriesTabs({
   activeTab,
@@ -34,10 +33,14 @@ export default function CategoriesTabs({
                   : "flex items-center gap-2 text-sm text-gray-400 hover:text-white"
               }
             >
-              {tab === "Hot Now" && <span>🔥</span>}
-              {tab === "Fresh" && <span>⏱</span>}
-              {tab === "Top Rated" && <span>📈</span>}
-              <span>{tab}</span>
+              {tab === "hot" && <span>🔥</span>}
+              {tab === "fresh" && <span>⏱</span>}
+              {tab === "top_rated" && <span>📈</span>}
+              <span>
+                {tab === "hot" && "Hot Now"}
+                {tab === "fresh" && "Fresh"}
+                {tab === "top_rated" && "Top Rated"}
+              </span>
             </button>
           ))}
         </div>

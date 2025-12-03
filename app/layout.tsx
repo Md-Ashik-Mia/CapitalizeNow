@@ -1,6 +1,7 @@
+import Squares from "@/components/Squares";
+import "./globals.css";
 // import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
-// import "./globals.css";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -35,11 +36,6 @@
 
 
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Squares from "@/components/Squares";
-import "./globals.css";
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -57,9 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
 
         {/* 🔴 FOREGROUND CONTENT */}
-        <Header />
-        <main className="pt-24">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

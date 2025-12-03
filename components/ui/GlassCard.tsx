@@ -1,4 +1,4 @@
-export default function GlassCard({ children, className = "" }) {
+export default function GlassCard({ children, className = "" }:any) {
   return (
     <div className={
       `rounded-2xl border border-[var(--pink-border)]
